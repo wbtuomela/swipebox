@@ -478,15 +478,7 @@
 			 */
 			showBars : function () {
 				var bars = $( '#swipebox-top-bar, #swipebox-bottom-bar' );
-				if ( this.doCssTrans() ) {
-					bars.addClass( 'visible-bars' );
-				} else {
-					$( '#swipebox-top-bar' ).animate( { top : 0 }, 500 );
-					$( '#swipebox-bottom-bar' ).animate( { bottom : 0 }, 500 );
-					setTimeout( function() {
-						bars.addClass( 'visible-bars' );
-					}, 1000 );
-				}
+				bars.addClass( 'visible-bars' );
 			},
 
 			/**
@@ -494,15 +486,7 @@
 			 */
 			hideBars : function () {
 				var bars = $( '#swipebox-top-bar, #swipebox-bottom-bar' );
-				if ( this.doCssTrans() ) {
-					bars.removeClass( 'visible-bars' );
-				} else {
-					$( '#swipebox-top-bar' ).animate( { top : '-50px' }, 500 );
-					$( '#swipebox-bottom-bar' ).animate( { bottom : '-50px' }, 500 );
-					setTimeout( function() {
-						bars.removeClass( 'visible-bars' );
-					}, 1000 );
-				}
+				bars.removeClass( 'visible-bars' );
 			},
 
 			/**
