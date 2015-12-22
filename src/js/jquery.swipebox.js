@@ -631,6 +631,10 @@
 				} else if ( index === elements.length - 1 && plugin.settings.loopAtEnd !== true ) {
 					$( '#swipebox-next' ).addClass( 'disabled' );
 				}
+
+				// reshow bars on each navigation
+				this.showBars();
+				this.setTimeout();
 			},
 
 			/**
