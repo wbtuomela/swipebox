@@ -47,6 +47,7 @@
 							<div id="swipebox-title"></div>\
 						</div>\
 						<div id="swipebox-bottom-bar">\
+						  <p class="caption"></p>\
 							<div id="swipebox-arrows">\
 								<a id="swipebox-prev"></a>\
 								<a id="swipebox-next"></a>\
@@ -727,13 +728,11 @@
 					$( '#swipebox-top-bar' ).show();
 
 					if(title) {
-						var tdiv = $('<div></div>').addClass('title').text(title);
-						$('#swipebox-title').append(tdiv);
+						$('#swipebox-title').text(title);
 					}
 
 					if(caption) {
-						var cdiv = $('<div></div>').addClass('caption').text(caption);
-						$('#swipebox-title').append(cdiv);
+						$('#swipebox-bottom-bar p.caption').text(caption);
 					}
 				} else {
 					$( '#swipebox-top-bar' ).hide();

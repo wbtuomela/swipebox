@@ -90,12 +90,14 @@
 					</a>
 				</li>
 				<li class="box">
-					<a href="http://swipebox.csag.co/images/image-2.jpg" class="swipebox" title="City">
+					<a href="http://swipebox.csag.co/images/image-2.jpg" class="swipebox" title="City"
+					  data-caption="cap1">
 						<img src="http://swipebox.csag.co/images/image-2.jpg" alt="image">
 					</a>
 				</li>
 				<li class="box">
-					<a href="http://swipebox.csag.co/images/image-3.jpg" class="swipebox" title="Street">
+					<a href="http://swipebox.csag.co/images/image-3.jpg" class="swipebox" title="Street"
+					  data-caption="&nbsp;">
 						<img src="http://swipebox.csag.co/images/image-3.jpg" alt="image">
 					</a>
 				</li>
@@ -257,7 +259,10 @@ $( '#gallery' ).click( function( e ) {
 	$( document ).ready(function() {
 
 			/* Basic Gallery */
-			$( '.swipebox' ).swipebox();
+			$( '.swipebox' ).swipebox({
+				removeBarsOnMobile: false,
+				hideBarsDelay: 0
+			});
 			
 			/* Video */
 			$( '.swipebox-video' ).swipebox();

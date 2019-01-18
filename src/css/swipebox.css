@@ -281,11 +281,13 @@ html.swipebox-html.swipebox-touch {
 
 #swipebox-top-bar {
   color: white !important;
-  font-size: 15px;
+  font-size: 18px;
   line-height: 43px;
   font-family: Helvetica, Arial, sans-serif;
 }
-#swipebox-top-bar div.caption {
-  font-size: 13px;
-  line-height: 20px;
+#swipebox-bottom-bar .caption {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
 }
